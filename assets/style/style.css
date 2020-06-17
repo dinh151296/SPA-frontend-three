@@ -1,0 +1,687 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	width:100%;
+	display:block;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style:none;
+}
+html{
+	font-size:50%;
+}
+body{
+	font-family: "Jost", sans-serif;
+}
+.margin-top-4rem{
+	margin-top:4rem;
+}
+.no-padding{
+	padding:0!important;
+}
+.row-fluid{
+	display:flex;
+	flex-wrap:wrap;
+}
+.color-w{
+	color: #fff;
+}
+.d-flex{
+	display:flex;
+}
+.justify-content-center{
+	justify-content:center;
+}
+.justify-content-space-between{
+	justify-content:space-between;
+}
+.align-items-center{
+	align-items:center;
+}
+.text-center{
+	text-align:center;
+}
+.h100{
+	height:100%;
+}
+:root{
+	--color-xanhnhat:#6EAF4B;
+}
+
+/* ============ 1, header ========= */
+.header, {
+
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-attachment:scroll;
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/hp2-header-bg.png);
+}
+.top-header{
+	height:6.5rem;
+	padding: 0 3rem;
+	border-bottom:2px solid #e6e6e6;
+}
+.top-header__left{}
+.top-header__left a{
+	color: #212121;
+	font-size:16px;
+	margin-right:2.8rem;
+	position:relative;
+}
+.border-right{
+	position:relative;
+}
+.border-right:after {
+	position:absolute;
+	content:'';
+	top:0;
+	right:-1.3rem;
+	width:1.5px;
+	height:100%;
+	background:#212121;
+}
+.top-header__right{}
+.top-header__text{
+	margin-right:2.5rem;
+	font-size:16px;
+}
+.top-header__text i{
+	color: var(--color-xanhnhat);
+}
+.top-header__text span{
+	margin-right:2.5rem;
+}
+.top-header__social-list{}
+.top-header__social-list i{
+	font-size:18px;
+	color:#000;
+	margin-right:2rem;
+	cursor:pointer;
+}
+.top-header__social-list i:hover, .top-header__left a:hover{
+	color: var(--color-xanhnhat);
+	transition:.5s;
+}
+header{
+	position:relative;
+}
+.header-right{}
+.header-item{
+	padding: 5rem 0;
+}
+.header-item img{
+	width: 25%;
+}
+.header-item__text{
+	margin-left:1rem;
+}
+.header-item__text h3{
+	color: #0c0c0c;
+	font-size:18px;
+	font-weight:600;
+	margin-bottom:1rem;
+}
+.header-item__text p{
+	font-size:16px;
+	color: #333333;
+}
+nav{
+	background:#699551;
+}
+.nav-list{}
+.nav-list li{
+	position:relative;
+}
+.nav-list li a{
+	color: #fff;
+	font-family: "Jost", sans-serif;
+	font-size:16px;
+	padding:3rem 1.5rem;
+	display:block;
+	font-weight:600;
+}
+.nav-list li:hover .sub-menu{
+	opacity:1;
+	animation: sub-menu .5s ease forwards;
+}
+.nav-list li a i{
+	margin-left:1rem;
+	font-size:12px;
+}
+.nav-active{
+	position:relative;
+}
+.nav-active:before{
+	position: absolute;
+	content:".";
+	color: #fff;
+	left:50%;
+	bottom:10px;
+}
+.sub-menu{
+	background: #f7f7f7;
+	width:20rem;
+	padding:1rem;
+	position:absolute;
+	left:0;
+	top:100%;
+	opacity:0;
+}
+@keyframes sub-menu{
+	0% {
+		margin-top:40px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+.sub-menu li{}
+.sub-menu li a{
+	color: #757575;
+	font-family: "Jost", sans-serif;
+	font-size:14px;
+	padding:1.5rem 1.5rem;
+	display:block;
+	font-weight:600;
+	background:#fff;
+}
+.sub-menu li a:hover{
+	color: var(--color-xanhnhat);
+	transition:.5s;
+}
+.order{}
+.order i{
+	font-size:14px;
+	margin-right:1.2rem;
+}
+.order-link{}
+.order-link a{
+	padding:1rem 2rem;
+	background:#466a32;
+	color:#fff;
+	font-size:18px;
+	font-weight:600;
+	border-radius:3px;
+}
+.order-link a:hover{
+	background:#fff;
+	color:var(--color-xanhnhat);
+	transition:.5s;
+}
+/* =====home===== */
+.home{
+	background-image:url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/bg-header.jpg);
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	height:90vh;
+}
+.home-banner{}
+.home-banner h3{
+	font-size:4rem;
+	color:var(--color-xanhnhat);
+	display:inline-block;
+	padding-bottom: 2rem;
+	border-bottom: 2px solid #fff;
+}
+.home-banner h1{
+	font-size:7rem;
+	color:#fff;
+	margin-top:2rem;
+}
+.home-banner p{
+	font-size:18px;
+	color:#fff;
+	margin:3rem 0;
+	line-height:3rem;
+}
+.home-link{}
+.home-link a{
+	padding: 1.2rem 2.5rem;
+	background: var(--color-xanhnhat);
+	border-radius: 4px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+}
+.home-link a i{
+	margin-left:1rem;
+}
+.home-link a:hover{
+	background:#fff;
+	color:#000;
+	transition:.5s;
+}
+/* =====store==== */
+.store-block__background-left{
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/bg-blog-shop.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.store-block{
+	padding: 7rem 0;
+}
+.store-block h1{
+	font-size: 40px;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 0px;
+	text-transform: none;
+}
+.store-block p{
+	margin: 3rem 0;
+	font-size:16px;
+}
+.store-block p i{
+	margin-right:1rem;
+}
+.store-block a{
+	font-size: 17px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	padding: 0px 0px 0px 0px;
+	text-transform: none;
+}
+.store-block__background-right{
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/hp2-half-2-bg.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	padding-left:6rem;
+}
+.store-block__background-right a{
+	color:var(--color-xanhnhat);
+}
+/* ======products====== */
+.products{
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/cannabis-shop-title-bg.png);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: #f8f8f8;
+	padding:10rem 0;
+}
+.post-title{}
+.post-title h3{
+	font-size: 48px;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 0px;
+	text-transform: none;
+	color: #6eaf4b;
+}
+.post-title p{
+	font-size: 18px;
+	font-weight: 400;
+	letter-spacing: 0px;
+	text-transform: none;
+	color: #3b3b3b;
+	margin: 3rem 0;
+	position:relative;
+	line-height:30px;
+}
+.post-title p:after{
+	position:absolute;
+	content:"";
+	top:120%;
+	left:50%;
+	height:3rem;
+	width: 2px;
+	background: #c7c7c7;
+}
+.product-item{
+	margin-bottom: 3rem;
+}
+.product-img{
+	position:relative;
+	overflow: hidden;
+}
+.product-img img{}
+.product-sale{
+	position:absolute;
+	width:7rem;
+	height:7rem;
+	line-height:7rem;
+	background: var(--color-xanhnhat);
+	border-radius: 50%;
+	top: 0;
+	left: 2rem;
+}
+.product-sale span {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+}
+.product-overlay{
+	position:absolute;
+	width:100%;
+	height:100%;
+	background:rgba(255,255,255,.8);
+	top:0;
+	left:0;
+	opacity:0;
+	transition: 0.5s ease;
+}
+.product-overlay span{
+	font-weight:600;
+	font-size:16px;
+	color:#000;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+}
+.product-img:hover .product-overlay{
+	opacity:1;
+}
+.product-img:hover .product-sale span{
+	color:#000;
+	transition: .5s;
+}
+.product-img:hover img{
+	transform: scale(1.1);
+	transition: .5s;
+}
+.product-desc{
+	background-color:#f8f8f8;
+}
+.product-desc h3{
+	margin: 1rem 0 2rem;
+	color:#000;
+	font-size: 24px;
+	font-weight: 600
+}
+.product-desc p{
+	font-size:16px;
+	margin-bottom:1rem;
+}
+.product-desc p span{
+	color: var(--color-xanhnhat);
+	margin-left:1rem;
+	font-weight:600;
+}
+.product-info{
+	margin-top: 2rem;
+}
+.product-price{
+	font-size:16px;
+	font-weight:600;
+}
+.product-price span{
+	color: var(--color-xanhnhat);
+	margin-left:1rem;
+}
+.product-icon i{
+	font-size:16px;
+	color: var(--color-xanhnhat);
+}
+.product-view-all{
+	margin-top: 4rem;
+}
+.product-view-all a{
+	font-size:14px;
+	color: #fff;
+	background:var(--color-xanhnhat);
+	padding: 1.2rem 2.5rem;
+	display: inline-block;
+	border-radius: 5px;
+}
+.product-view-all a:hover{
+	background:#fff;
+	color:#000;
+	transition:.5s;
+}
+
+/* =====0banner===== */
+.banner{}
+.banner-content{
+	padding: 12rem 0;
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/wp-newletter-shop2.jpg);
+	background-position:center center;
+}
+.banner-text{
+	color: #fff;
+	padding: 0 5rem;
+}
+.banner-text h3{
+	font-weight:600;
+	font-size:3.5rem;
+	margin-bottom:3rem;
+}
+.banner-text p{
+	font-size:16px;
+	line-height:3rem;
+}
+.banner-input{
+	width: 100%;
+	height: 5rem;
+}
+.banner-input input[type=text]{
+	width: 60%;
+	border: none;
+	padding-left: 2rem;
+}
+.banner-input input[type=submit]{
+	width: 20%;
+	border: none;
+	background: var(--color-xanhnhat);
+	color: #fff;
+	font-weight: 600;
+}
+
+/* ======comment======= */
+.comment{
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/bg-test2.jpg);
+	background-size: cover;
+	background-position: center center;
+	padding: 10rem 0;
+}
+.color-xanh{
+	color: var(--color-xanhnhat)!important;
+}
+.comment-block{
+	padding: 5rem 5rem 6rem;
+	background: #fff;
+}
+.comment-block:hover{
+	transform: translateY(-20px);
+	transition:.5s;
+}
+.comment-block p, .footer-block p{
+	font-size: 17px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0px;
+	color: #777777;
+	line-height:3rem;
+}
+.comment-author{
+	margin-top:3rem;
+}
+.comment-author img{
+	width: 15%;
+	border-radius: 50%;
+}
+.comment-author__name{
+	margin-left:3rem;
+}
+.comment-author__name span{
+	font-size:20px;
+	color:var(--color-xanhnhat);
+	font-weight:600;
+	margin-bottom:2rem;
+}
+.comment-author__name p{
+	font-size:16px;
+}
+.comment-img{
+	max-width:125px;
+	margin:3rem auto;
+	text-align:center;
+}
+/* ===footer==== */
+footer{
+	background-image: url(https://demo.goodlayers.com/cannamed/demo2/wp-content/uploads/sites/4/2020/04/footer-bg-1.png);
+	background-size: cover;
+}
+.footer-content{
+	padding: 10rem 0;
+}
+.footer-block{}
+.footer-block p{
+	margin: 3rem 0;
+}
+.footer-block img{}
+.footer-logo{
+	max-width:50%;
+}
+.footer-block h3{
+	color: #1e1e1e;
+	font-size:24px;
+	font-weight:600;
+	margin-bottom:3rem;
+}
+.footer-block ul{}
+.footer-block ul li{
+	width:50%;
+	float:left;
+	margin-bottom:1.5rem;
+}
+.footer-block ul li a{
+	color:var(--color-xanhnhat);
+	font-size:16px;
+}
+.footer-block ul li a:hover{
+	color:#000;
+}
+.footer-block{
+	font-size:18px;
+	color:var(--color-xanhnhat);
+}
+.footer-block span i {
+	margin-right:1rem;
+}
+.footer-copyright{
+	color:var(--color-xanhnhat);
+	padding: 3rem 0;
+	background-color: #f8f8f8;
+}
+.footer-copyright__text{
+	font-size:16px;
+}
+.footer-copyright__social-list{
+	text-align: right;
+}
+.footer-copyright__social-list i{
+	font-size:18px;
+	margin-right:2rem;
+	cursor: pointer;
+}
+.footer-copyright__social-list i:hover{
+	color:#000;
+	transition:.5s;
+}
+/* ======end footer====== */
+
+
+/* menuResponsive */
+.menu-fixed{
+	width:100%;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1000;
+	animation: menu-down .5s ease-out forwards;
+}
+
+@keyframes menu-down {
+	0% {
+		transform:translateY(-50px);
+	}
+	100% {
+		transform:translateY(0);
+	}
+}
+
+.menu-responsive{
+	position:absolute;
+	top: 50%;
+	transform:translateY(-50%);
+	right:4rem;
+	display:none;
+}
+.menu-responsive div{
+	width: 2rem;
+	height: 2px;
+	background:#000;
+	margin: 0.5rem 0;
+	transition:.3s ease;
+
+}
+.burger-last .line1{
+	transform:rotate(-45deg) translate(-5px, 6px);
+}
+.burger-last .line2{
+	opacity:0
+}
+.burger-last .line3{
+	transform:rotate(45deg)  translate(-5px, -6px);
+}
+
+/* ====overlay-menu==== */
+.menu-overlay{
+	display: none;
+	top: 0;
+	left: 0;
+	position:absolute;
+	transition:.5s;
+	position:absolute;
+	width:100%;
+	max-height:0;
+	background-color: rgba(0, 0, 0, 0.88);
+}
+
+.nav-overlay{}
+.nav-overlay li{}
+.nav-overlay li a{
+	color:#fff;
+	display:block;
+	padding: 2rem 0;
+	text-align:center;
+	font-size:3rem;
+	font-weight:600;
+	border-bottom: 1px solid #424242;
+}
+.nav-overlay li a i{
+	margin-left:2rem;
+}
+
+.menu-responsive-overlay {
+	margin: 1rem auto;
+	transition: .3s ease;
+	padding: 3rem 0;
+	color: #fff;
+	font-size: 3rem;
+	cursor: pointer;
+}
+.menu-overlay-none{
+	/* transition:.5s; */
+	/* max-height:100vh; */
+	display: block!important;
+	animation: menu-over-down .5s ease forwards;
+}
+
+@keyframes menu-over-down{
+	0%{
+		max-height:0;
+	}
+	100%{
+		max-height:100vh;
+	}
+}
